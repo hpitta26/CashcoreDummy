@@ -1,0 +1,85 @@
+### REGISTER
+POST http://localhost:8080/restapi/register/
+Content-Type: application/json
+
+{
+    "username": "username1",
+    "email": "name2@gmail.com",
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "password": "username2"
+}
+
+### GET ALL USERS
+GET http://localhost:8080/restapi/users/    
+
+### GET USER BY ID
+DELETE  http://localhost:8080/restapi/users/2/
+
+### GET ALL TRANSACTIONS
+GET http://localhost:8080/restapi/transactions/
+
+### POST A TRANSACTION
+POST http://localhost:8080/restapi/transactions/
+Content-Type: application/json
+
+{
+    "accountID": "1234567890",
+    "userID": 2,
+    "companyName": "New Transaction",
+    "amount": 10.99,
+    "categories": ["Food and Drink", "Restaurants", "Fast Food"],
+    "transactionDate": "2024-11-22"
+}
+
+### DELETE A TRANSACTION
+DELETE http://localhost:8080/restapi/transactions/13/
+
+### DELETE ALL TRANSACTIONS
+DELETE http://localhost:8080/restapi/transactions/delete/
+
+### GET ALL PLAID ITEMS
+GET http://localhost:8080/restapi/plaiditems/
+
+### DELETE A PLAID ITEM
+DELETE http://localhost:8080/restapi/plaiditems/6/
+
+### FETCH TRANSACTIONS
+POST http://localhost:8080/restapi/plaidtransactions/
+Content-Type: application/json
+
+{
+    "username": "username1"
+}
+
+### GET ALL TRANSACTIONS FOR A USER
+POST http://localhost:8080/restapi/transactions/user/
+Content-Type: application/json
+
+{
+    "username": "username1"
+}
+
+### FETCH AUTH
+POST http://localhost:8080/restapi/plaidauth/
+Content-Type: application/json
+
+{
+    "username": "username1"
+}
+
+### FETCH RECURRING TRANSACTIONS
+POST http://localhost:8080/restapi/plaidrecurringtransactions/
+Content-Type: application/json
+
+{
+    "username": "username1"
+}
+
+### FETCH USER MONTHLY SUMMARY
+POST http://localhost:8080/restapi/monthlysummary/user/
+Content-Type: application/json
+
+{
+    "username": "username1"
+}
