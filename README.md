@@ -1,7 +1,6 @@
 # Cashcore Dummy
 
-This is the version of Cashcore presented during Demo Day for BUILD fall 2024 since main repo was not demoable.  
-Note that the landing page isn't implemented, for that refer to the main project.  
+This is the version of Cashcore presented during Demo Day for BUILD fall 2024 since main repo was not demoable. Note that the landing page isn't implemented, for that refer to the main project.  
 -- Check out project wiki for current project --
 
 *See Original Project Here:*  
